@@ -1,0 +1,189 @@
+body {
+    scrollbar-face-color: slategray;
+    scrollbar-track-color: #b8c0c8;
+}
+
+[class*="bg__"] {
+    height: 90vh;
+    /* fix background */
+    background-attachment: fixed;
+    /* center it */
+    background-position: center center;
+    /* Scale it nicely to the element */
+    background-size: cover;
+    /* just make it look a bit better ;) */
+}
+
+@media only screen and (max-width: 1100px) {
+    [class*="bg__"] {
+        background-attachment: scroll !important;
+        background-position: center center !important;
+    }
+    .text-title {
+        display: none !important;
+    }
+    .logo-title {
+        width: 10%
+    }
+}
+
+.bg__foo {
+    display: block !important;
+    background-image: url(images/SAM_1008.jpg);
+}
+
+.bg__bar {
+    height: 50vh;
+}
+
+.sml_sp1 {
+    position: absolute;
+    transform: translate3d(70vw, 0, 0);
+}
+
+.bg__sp1 {
+    background-image: url(http://static.independent.co.uk/s3fs-public/styles/article_large/public/thumbnails/image/2016/03/15/16/Ginger-Nuts.jpg
+);
+}
+
+.bg__sp2 {
+    background-image: url(http://www.1wallpaperhd.com/wp-content/uploads/Other/FTP1/1280x720/Biscuit%20Wallpapers%20HD%201280x720.jpg
+);
+}
+
+.bg__sp3 {
+    background-image: url(http://img.jituwang.com/uploads/allimg/120213/8113-12021312550386.jpg
+);
+}
+
+.bg__sp4 {
+    background-image: url(http://ya.clan.su/_ph/1/764962926.jpg
+);
+}
+
+.bg__bazz {
+    height: 100%;
+}
+
+.text-title {
+    background-color: rgba(0, 0, 0, 0.18);
+    font-weight: lighter;
+    color: white;
+    padding-left: 10px;
+}
+
+.text-con {
+    width: 50% !important;
+    padding: 0 20px 140px 20px !important;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+}
+
+.logo-title {
+    position: absolute;
+    width: 8vw;
+    height: 8vw;
+    resize: both;
+    margin-top: 5vh;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+
+.bg-logo-title {
+    width: 100vw;
+    height: 100vw;
+    margin-top: 5vh;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.show-text-appear {
+    animation: Begin 7000ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+    -webkit-animation: Begin 7000ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+}
+
+@keyframes Begin {
+    from {
+        transform: translate3d(50vw, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes Begin {
+    from {
+        transform: translate3d(50vw, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.show-logo-appear {
+    animation: Slide 5000ms linear forwards;
+    -o-animation: Slide 5000ms linear forwards;
+    -moz-animation: Slide 5000ms linear forwards;
+    -webkit-animation: Slide 5000ms linear forwards;
+}
+
+@keyframes Slide {
+    0% {
+        border-style: solid;
+        border-color: white;
+        border-width: 150vw;
+        transform: translate(-10%, -50%);
+    }
+    35% {
+        border-style: solid;
+        border-color: white;
+        border-width: 150vw;
+        transform: translate(-51%, -50%);
+    }
+    40% {
+        transform: translate3d(0, 0, 0);
+        transform: translate(-49.5%, -50%);
+    }
+    45% {
+        transform: translate3d(0, 0, 0);
+        transform: translate(-50%, -50%);
+    }
+    50% {}
+    100% {
+        border-style: solid;
+        border-color: white;
+        border-width: 0;
+    }
+}
+
+.text-brand {
+    background-color: rgba(0, 0, 0, 0.70);
+    color: white;
+    font-weight: bold;
+    width: 100vw;
+    margin-top: 80px;
+    text-indent: 20px;
+}
+
+.show-text-brand-appear {
+    animation: Anim 2000ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+}
+
+@keyframes Anim {
+    0% {
+        transform: translate3d(100vw, 0, 0);
+        background-color: rgba(0, 0, 0, 0);
+    }
+    50% {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.70);
+    }
+}
