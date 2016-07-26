@@ -9,5 +9,5 @@ FlowRouter.route("/", {
       content:
       <Main />
     });
-  }
+  } 
 });

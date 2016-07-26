@@ -12,11 +12,12 @@ export default class Work extends React.Component {
     }
 
 
-
     render() {
         return (
-            <div>
+            <div> 
+                                
                 <Layout style={{ overflow: 'hidden' }}>
+                
                     <Header className="bg__foo" title={
                         <div>
                             <ReactCSSTransitionGroup
@@ -27,7 +28,10 @@ export default class Work extends React.Component {
                                 transitionAppear={true}
                                 
                                 >
-                                <img className="logo-title" src={'images/lh.png'} />
+                                <div>
+                                <div className="logo-title">
+                                </div>                              
+                                </div>
                             </ReactCSSTransitionGroup>
                             
                             <div/>
@@ -53,26 +57,25 @@ export default class Work extends React.Component {
                     <div >
 
                         <div className="bg__bar">
-                            <Card style={{ width: '100%', height: '100%', margin: 'auto', backgroundColor: 'white' }}>
-                             <CardTitle>
-                               <img className='sml_sp1' src={'images/cliparti1_biscuits-clipart_06.jpg'} />
-                             </CardTitle>                                                                                         
-                                <CardText className="text-con">
-                                <h1 style={{fontSize:'31px', marginBottom: '30px'}}> Title </h1>
+                            <Card style={{ width: '100%', height: '100%', margin: 'auto', backgroundColor: 'white' }}>                                                                                                                                                   
+                                 <CardActions border style={{width:'50%'}} className="text-con">
+                                 <div style={{position: 'relative'}}>
+                                  <h1 style={{fontSize:'31px', marginBottom: '30px'}}> Title </h1>
                                     <p style={{fontSize:'21px', fontWeight: 'lighter', lineHeight: '18px'}}>
                                         This is random text:
-                                    </p>                                
-                                </CardText>                               
+                                    </p>   
+                                    </div>
+                                    <div className='sml_sp1'> </div>           
+                                </CardActions>                            
                             </Card>
                         </div>
                         <div className="bg__sp1">
                             <Card style={{ width: '100%', height: '100%', margin: 'auto', backgroundColor: 'transparent' }}>
                                 <CardTitle style={{ color: '#fff', height: '100%' }}></CardTitle>
                                 <CardActions border style={{ backgroundColor: 'white', height: '100%', padding: '20px', textAlign: 'center' }}>
-                                    <h3 style={{ fontWeight: 'lighter' }}>
+                                    <p style={{fontSize:'21px', fontWeight: 'lighter', lineHeight: '18px'}}>
                                         This is random text:
-
-                                    </h3>
+                                    </p>   
                                 </CardActions>
                             </Card>
                         </div>

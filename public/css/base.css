@@ -14,16 +14,18 @@ body {
     /* just make it look a bit better ;) */
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1200px) {
     [class*="bg__"] {
-        background-attachment: scroll !important;
-        background-position: center center !important;
+        background-attachment: scroll !important;       
     }
     .text-title {
         display: none !important;
     }
     .logo-title {
         width: 10%
+    }
+    .text-con {
+        width: 100% !important;
     }
 }
 
@@ -37,28 +39,28 @@ body {
 }
 
 .sml_sp1 {
+    width: 40%;
+    height: 100%;
+    background-image: url(images/b1.png);
+    background-position: center center;
+    background-size: cover;
     position: absolute;
-    transform: translate3d(70vw, 0, 0);
 }
 
 .bg__sp1 {
-    background-image: url(http://static.independent.co.uk/s3fs-public/styles/article_large/public/thumbnails/image/2016/03/15/16/Ginger-Nuts.jpg
-);
+    background-image: url(http://static.independent.co.uk/s3fs-public/styles/article_large/public/thumbnails/image/2016/03/15/16/Ginger-Nuts.jpg);
 }
 
 .bg__sp2 {
-    background-image: url(http://www.1wallpaperhd.com/wp-content/uploads/Other/FTP1/1280x720/Biscuit%20Wallpapers%20HD%201280x720.jpg
-);
+    background-image: url(http://www.1wallpaperhd.com/wp-content/uploads/Other/FTP1/1280x720/Biscuit%20Wallpapers%20HD%201280x720.jpg);
 }
 
 .bg__sp3 {
-    background-image: url(http://img.jituwang.com/uploads/allimg/120213/8113-12021312550386.jpg
-);
+    background-image: url(http://img.jituwang.com/uploads/allimg/120213/8113-12021312550386.jpg);
 }
 
 .bg__sp4 {
-    background-image: url(http://ya.clan.su/_ph/1/764962926.jpg
-);
+    background-image: url(http://ya.clan.su/_ph/1/764962926.jpg);
 }
 
 .bg__bazz {
@@ -72,9 +74,9 @@ body {
     padding-left: 10px;
 }
 
-.text-con {
-    width: 50% !important;
-    padding: 0 20px 140px 20px !important;
+.text-con {   
+    height: 100%;
+    padding: 0 !important;
     margin: 0 auto;
     text-align: center;
     z-index: 1;
@@ -90,6 +92,8 @@ body {
     border-radius: 50%;
     transform: translate(-50%, -50%);
     z-index: 99;
+    background-image: url(images/lh.png);
+    background-position: center center;
 }
 
 .bg-logo-title {
