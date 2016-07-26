@@ -25,17 +25,11 @@ export default class Work extends React.Component {
                                 transitionEnterTimeout={500}
                                 transitionLeaveTimeout={500}
                                 transitionAppearTimeout={5200}
-                                transitionAppear={true}
-                                
-                                >
-                                <div>
-                                <div className="logo-title">
-                                </div>                              
+                                transitionAppear={true}                                
+                                >                               
+                                <div className="logo-title">                                                          
                                 </div>
-                            </ReactCSSTransitionGroup>
-                            
-                            <div/>
-
+                            </ReactCSSTransitionGroup>                          
                         </div>
                     } seamed style={{ height: '50%' }} scroll>
                         <div style={{ position: 'absolute', left: '50%', top: '20%', zIndex: '3' }}>
