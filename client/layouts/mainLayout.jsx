@@ -2,7 +2,7 @@ import React from 'react';
 import {Layout, Flex, Fixed} from 'react-layout-pane';
 import '/public/css/base.css';
 import '/public/css/fonts.css';
-
+import '/public/css/style.css';
 import '/node_modules/react-mdl/extra/material.css';
 import '/node_modules/react-mdl/extra/material.js';
 
